@@ -1,0 +1,53 @@
+# ============================================================
+# Creo MCP Bridge — .gitignore
+# ============================================================
+
+# ----- PTC Proprietary Files (DO NOT DISTRIBUTE) -----
+# These must be sourced from your own licensed Creo installation
+java-bridge/lib/pfcasync.jar
+java-bridge/lib/pfcasyncmt.dll
+java-bridge/lib/pfc*.jar
+java-bridge/lib/pfc*.dll
+*.dll
+*.so
+
+# ----- Java Build Output -----
+java-bridge/bin/
+java-bridge/.bin-vscode/
+*.class
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+mcp-server/.venv/
+mcp-server/venv/
+mcp-server/*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ----- IDE & Editor -----
+.vscode/settings.json
+.idea/
+*.iml
+*.suo
+*.user
+.DS_Store
+Thumbs.db
+
+# ----- Creo Working Files (auto-generated) -----
+*.trail
+*.log
+trail.txt.*
+std.err
+std.out
+
+# ----- Environment & Secrets -----
+.env
+*.env.local
+claude_desktop_config.json
+
